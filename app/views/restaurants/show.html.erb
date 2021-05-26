@@ -8,6 +8,8 @@
     <p><%= review.content %></p>
   <% end %>
 
-<%= link_to 'Add a rating', new_restaurant_review_path(@restaurant) %> </p>
+ <!-- link_to 'Add a rating', new_restaurant_review_path(@restaurant)
+ -->
  <p> <%= link_to 'Go back', restaurants_path %> </p>
-x
+
+<%= render './reviews/form' %>
