@@ -1,0 +1,7 @@
+<h1>Add a rating to this restaurant:</h1>
+<%= simple_form_for [@restaurant, @review] do |r| %>
+  <%= r.input :rating, input_html: { min: '0', max: '5' } %>
+  <%= r.input :content %>
+  <%= r.submit %>
+<% end %>
+<%= link_to 'Go back', restaurants_path %> </p>
